@@ -3,3 +3,13 @@ tasks:
       echo `gp url` >> before.txt
     command: |
       echo `gp url` >> command.txt
+
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: false
+    addCheck: true
+    addComment: false
+    addBadge: false
