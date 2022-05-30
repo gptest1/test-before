@@ -1,5 +1,5 @@
 # test-before
-(for a variant of this test without any command task, see the `before-only` branch or PR #1)
+⚠️ The behavior described below was always GitHub-specific, and as of 21d3f00d47f7b073fa517dd186963bcb87abc652 is no longer usable. Use `init` instead of `before` when the main intent is to trigger a prebuild and you previously relied on a single `before` without any `init`. Use `before` to extract common steps when both `init` and `command` are also present.
 
 #### .gitpod.yml
 ```yaml
@@ -21,12 +21,3 @@ This repo demonstrates the following
 - Open this repo in a gitpod workspace
 - `before.txt` contains 2 lines - one with the URL of the prebuild workspace, one with the URL of the main workspace
 - `command.txt` contains the url of the main workspace
-
-touch  
-touch  
-touch  
-touch  
-touch  
-touch  
-touch  
-touch
